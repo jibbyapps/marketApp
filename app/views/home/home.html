@@ -1,0 +1,18 @@
+<div class="container home">
+    <h3>{{category}}</h3>
+    <hr>
+    <ul class="category">
+        <li ng-repeat="item in gallery" ng-click="changeCategory(item.category)">{{item.category}}</li>
+    </ul>
+    <div class="row">
+        <div class="col-md-3 col-sm-6" ng-repeat="phone in phones">
+            <a href="/#{{phone.name}}" class="thumbnail">
+                <img ng-src="{{phone.img}}" alt="">
+                <br>
+                <p>{{phone.name}}</p>
+                <p>{{phone.description}}</p>
+                <p>{{phone.price}}</p>
+            </a>
+        </div>
+    </div>
+</div>

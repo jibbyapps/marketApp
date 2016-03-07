@@ -13,17 +13,37 @@
 </head>
 <body>
 
-<h1>Hello world</h1>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/#home">НиштячекNET</a>
+        </div>
+        <ul class="navigation">
+            <li><span class="glyphicon glyphicon-search"></span></li>
+            <li><span class="glyphicon glyphicon-user"></span></li>
+        </ul>
+    </div>
+</header>
+
+<section class="content">
+    <div ng-view></div>
+</section>
+
 
 <!-- build:js script/vendor.js -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
-
 <!--endbuild-->
+
 <!-- build:js script/main.js -->
 <script src="app.js"></script>
+<script src="components/services.js"></script>
+
+<script src="views/home/home.js"></script>
+
 <!--endbuild-->
 </body>
 </html>

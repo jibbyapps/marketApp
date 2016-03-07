@@ -1,0 +1,38 @@
+[
+
+  {
+    "category": "Samsung",
+    "phones": [
+      {
+        "img": "http://placehold.it/250x200",
+        "name": "Samsung A5",
+        "description": "The Galaxy A5 offers a sleek, high fashion design and advanced functions that make social networking easy.",
+        "price": "$249.99"
+      },
+      {
+        "img": "http://placehold.it/250x200",
+        "name": "Samsung J5",
+        "description": "The Galaxy A5 offers a sleek, high fashion design and advanced functions that make social networking easy.",
+        "price": "$249.99"
+      }
+    ]
+  },
+
+  {
+    "category": "Apple",
+    "phones": [
+      {
+        "img": "http://placehold.it/250x200",
+        "name": "Apple S5",
+        "description": "The Galaxy A5 offers a sleek, high fashion design and advanced functions that make social networking easy.",
+        "price": "$249.99"
+      },
+      {
+        "img": "http://placehold.it/250x200",
+        "name": "Samsung J5",
+        "description": "The Galaxy A5 offers a sleek, high fashion design and advanced functions that make social networking easy.",
+        "price": "$249.99"
+      }
+    ]
+  }
+]

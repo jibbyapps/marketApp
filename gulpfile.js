@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'dist/',
-        js: 'dist/js/',
+        js: 'dist/script/',
         css: 'dist/css/',
         img: 'dist/img/',
         fonts: 'dist/fonts/',
@@ -33,7 +33,7 @@ var path = {
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'app/**/*.html',
         js: 'app/js/**/*.js',
-        style: 'app/less/**/*.less',
+        style: 'app/styles/**/*.less',
         img: 'app/img/**/*.*',
         fonts: 'app/fonts/**/*.*'
     }

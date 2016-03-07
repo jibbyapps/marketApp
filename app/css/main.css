@@ -1,3 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 body {
-  background: #dedede;
+  background: #F3F3F3;
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2DBE60), to(#1FAE52));
+  background: -webkit-linear-gradient(top, #2DBE60, #1FAE52);
+  background: linear-gradient(180deg, #2DBE60, #1FAE52);
+  height: 60px;
+  position: relative;
+  border-bottom: 3px solid green;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+header .logo a {
+  display: block;
+  float: left;
+  line-height: 60px;
+  height: 100%;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+header .navigation {
+  float: right;
+  padding: 0;
+  list-style-type: none;
+  display: table;
+  height: 60px;
+}
+header .navigation li {
+  display: table-cell;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.home .category li {
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #999;
+  margin-left: 5px;
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: #1ab74e;
+  color: #ffffff;
+  font-weight: bold;
+  overflow: hidden;
+  text-shadow: 1px 1px #17a633, 2px 2px #17a633, 3px 3px #17a633, 4px 4px #17a633, 5px 5px #17a633, 6px 6px #17a633, 7px 7px #17a633, 8px 8px #17a633, 9px 9px #17a633, 10px 10px #17a633, 11px 11px #17a633, 12px 12px #17a633, 13px 13px #17a633, 14px 14px #17a633, 15px 15px #17a633, 16px 16px #17a633, 17px 17px #17a633, 18px 18px #17a633, 19px 19px #17a633, 20px 20px #17a633;
+}
+.home .category li:hover {
+  background: #1ac451;
 }
