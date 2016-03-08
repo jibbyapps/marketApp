@@ -9,7 +9,7 @@ app.controller('HomeCtrl', function ($scope, getPhones) {
     var src = 'json/phones.json';
     $scope.category = 'Samsung';
     $scope.getData = function () {
-        getPhones.gatData(src, function (data) {
+        getPhones.getData(src, function (data) {
             $scope.gallery = data;
             angular.forEach(data, function (value, key) {
                 if(data[key].category == $scope.category) {

@@ -47,6 +47,9 @@ header .navigation li {
   cursor: pointer;
   vertical-align: middle;
 }
+.home .thumbnail {
+  text-decoration: none;
+}
 .home .category li {
   display: inline-block;
   padding: 10px 20px;
@@ -67,4 +70,41 @@ header .navigation li {
 }
 .home .category li:hover {
   background: #1ac451;
+}
+.details .glyphicon-home {
+  font-size: 20px;
+  color: #999;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  background: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.details .namePhone {
+  float: left;
+  margin-top: 13px;
+  margin-left: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+.details .about {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  position: relative;
+}
+.details .description {
+  margin-top: 40px;
+}
+.details .price {
+  color: forestgreen;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
