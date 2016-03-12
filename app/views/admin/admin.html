@@ -4,4 +4,21 @@
     }
 </style>
 
-<h1>login page</h1>
+<div class="top-line"></div>
+<div class="container admin">
+    <div class="thumbnail login">
+        <a href="#/" class="glyphicon glyphicon-home"></a>
+        <h3>Вход в admin панель</h3>
+
+        <form novalidate class="simple-form">
+            <p>Логин</p>
+            <input type="text" ng-model="user.name" /><br />
+            <p>Пароль</p>
+            <input type="password" ng-model="user.password" /><br />
+            <br>
+            <br>
+            <input class="btn btn-default" type="submit" ng-click="update(user)" value="Вход" />
+        </form>
+        <p class="error">{{error}}</p>
+    </div>
+</div>

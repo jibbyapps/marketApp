@@ -5,6 +5,18 @@ app.config(function ($routeProvider) {
     })
 });
 
-app.controller('AdminCtrl', function ($scope) {
-    $scope.name = "pit";
+app.controller('AdminCtrl', function ($scope, $http, $location) {
+    $scope.master = {};
+
+    $scope.update = function(user) {
+        $scope.master = angular.copy(user);
+
+        $http.post('index.php', $scope.master).success(function (data) {
+            if(data) {
+                $location.path('/admin/dashboard');
+            } else {
+                $scope.error = "Не правильно введен логин или пароль";
+            }
+        })
+    };
 });

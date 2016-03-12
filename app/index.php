@@ -6,36 +6,19 @@
  * Time: 16:43
  */
 
-?>
+$answer = json_decode(file_get_contents('php://input'), true);
+$name = $answer['name'];
+$pass = $answer['password'];
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <!-- build:css css/vendor.css -->
-    <!--bower:css-->
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="bower_components/tooltipster/css/tooltipster.css" />
-    <!--endbower-->
-    <!--endbuild-->
-    <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--endbuild-->
+if (($handle = fopen("db/users.csv", "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        if($data[0] == $name && $data[1] == $pass) {
+            echo true;
+        } else {
+            echo false;
+        }
 
-</head>
-<body>
-
-<!-- build:js script/vendor.js -->
-<!--bower:js-->
-<script src="bower_components/jquery/jquery.js"></script>
-<script src="bower_components/tooltipster/js/jquery.tooltipster.min.js"></script>
-<!--endbower-->
-<!--endbuild-->
-<!-- build:js script/main.js -->
-<script src="js/functions.js"></script>
-<script src="js/main.js"></script>
-<!--endbuild-->
-</body>
-</html>
+    }
+    fclose($handle);
+}
+//echo json_encode($answer);
