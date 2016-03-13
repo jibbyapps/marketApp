@@ -42,6 +42,7 @@ app.factory('getPhones', function ($http) {
         getData(src, function (data) {
             angular.forEach(data, function (value, key) {
                 if(value.category == category) {
+                    if(!value.phones) value.phones = [];
                     value.phones.push(phone);
                     return callback(data);
                 }

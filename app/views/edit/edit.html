@@ -7,14 +7,22 @@
 <div class="top-line"></div>
 
 <div class="container edit">
-   <h3>{{name}}</h3>
-    <img class="main-img" ng-src="{{phone.img}}" alt=""><br>
-    <input type="text" ng-model="phone.img">
+    <h1>Редактирование элемента</h1>
+    <h3>Элемент: {{phone.name}}</h3>
+    <img ng-src="{{phone.img}}" alt="">
+    <br>
+    <input class="form-control" type="text" ng-model="phone.img" placeholder="Путь к изображению">
     <hr>
-    <input type="text" ng-model="phone.name"> <br>
-    <textarea ng-model="phone.description" name="description" id="" cols="50" rows="10"></textarea><br>
-    <input type="text" ng-model="phone.price"><br>
+    <p>Название</p>
+    <input class="form-control" type="text" ng-model="phone.name"><br>
+    <p>Описание</p>
+    <textarea class="form-control" ng-model="phone.description" name="description" id="" cols="30" rows="10"></textarea><br>
+    <p>Цена</p>
+    <input class="form-control" type="text" ng-model="phone.price"><br>
     <hr>
     <a href="#/admin/dashboard" class="btn btn-default">Назад</a>
     <span class="btn btn-default" ng-click="save()">Сохранить</span>
+
+    <hr>
+    <pre>{{phone|json}}</pre>
 </div>

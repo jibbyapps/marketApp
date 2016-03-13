@@ -3,9 +3,32 @@
 .home {
   .thumbnail {
     text-decoration: none;
+    max-height: 380px;
+    overflow: hidden;
+    position: relative;
+    &:after {
+      content: '';
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0,0,0,0), #fff);
+    }
 
     img {
       height: 200px;
+    }
+    .price {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 22px;
+      background: rgba(255,255,255,.75);
+      border-radius: 4px;
+      font-weight:600;
+      color: #333;
+      padding: 1px 3px;
     }
   }
   .category {

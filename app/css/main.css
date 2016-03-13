@@ -53,9 +53,35 @@ header .navigation li {
 }
 .home .thumbnail {
   text-decoration: none;
+  max-height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+.home .thumbnail:after {
+  content: '';
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#fff));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #fff);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #fff);
 }
 .home .thumbnail img {
   height: 200px;
+}
+.home .thumbnail .price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+  padding: 1px 3px;
 }
 .home .category li {
   display: inline-block;
@@ -234,8 +260,21 @@ header .navigation li {
 .dashboard .add-new-phone {
   text-align: center;
 }
-.edit .main-img {
-  width: 250px;
+.edit img {
+  max-width: 400px;
+}
+.edit input,
+.edit textarea {
+  width: 400px;
+}
+.edit p {
+  color: #767676;
+}
+.edit h1 {
+  color: #444;
+}
+.edit h3 {
+  color: #777;
 }
 .addNew img {
   max-width: 400px;
