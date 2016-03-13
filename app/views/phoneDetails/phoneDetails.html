@@ -5,12 +5,16 @@
 
 
     <div class="about">
-        <div class="col-md-3">
-            <img ng-src="{{phone.img}}" alt="">
-        </div>
-        <div class="col-md-9">
-            <p class="description">{{phone.description}}</p>
-            <p class="price">{{phone.price}}</p>
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="main-img" ng-src="{{phone.img}}" alt="">
+                </div>
+                <div class="col-md-9">
+                    <p class="description">{{phone.description}}</p>
+                    <p class="price">{{phone.price}}</p>
+                </div>
+            </div>
         </div>
     </div>
 

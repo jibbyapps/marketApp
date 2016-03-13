@@ -11,7 +11,7 @@ app.controller('AdminCtrl', function ($scope, $http, $location) {
     $scope.update = function(user) {
         $scope.master = angular.copy(user);
 
-        $http.post('index.php', $scope.master).success(function (data) {
+        $http.post('php/login.php', $scope.master).success(function (data) {
             if(data) {
                 $location.path('/admin/dashboard');
             } else {

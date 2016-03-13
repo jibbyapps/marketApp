@@ -6,6 +6,36 @@
 
 <div class="top-line"></div>
 <div class="container dashboard">
-    <h1>Admin panel {{name}}</h1>
+    <a href="#/" class="glyphicon glyphicon-home"></a>
+    <br>
+    <h1>Admin panel</h1>
+
+    <div ng-click="addNewCategory()" class="thumbnail add-new-category">
+        <span class="glyphicon glyphicon-plus"></span>
+    </div>
+
+    <ul>
+        <li ng-repeat="arrayPhone in phones">
+            <hr>
+            <div class="clearfix nameCategory">
+                <h2>{{arrayPhone.category}}</h2>
+                <span ng-click="remove(arrayPhone.category)" class="glyphicon glyphicon-remove"></span>
+            </div>
+            <a href="#/admin/dashboard/{{arrayPhone.category}}/addNewPhone" class="thumbnail add-new-phone">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+            <ul class="">
+                <li ng-repeat="phone in arrayPhone.phones">
+                    <a href="#/admin/dashboard/edit/{{phone.name}}" class="thumbnail">
+                        <h4>{{phone.name}}</h4>
+                        <p>{{phone.description}}</p>
+                        <p>{{phone.price}}</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
 </div>
 

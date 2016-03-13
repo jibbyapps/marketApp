@@ -21,4 +21,3 @@ if (($handle = fopen("db/users.csv", "r")) !== FALSE) {
     }
     fclose($handle);
 }
-//echo json_encode($answer);

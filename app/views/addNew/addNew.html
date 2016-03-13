@@ -1,0 +1,27 @@
+<style>
+    header {
+        display: none;
+    }
+</style>
+
+<div class="top-line"></div>
+<div class="container addNew">
+    <h1>Добавление нового телефона</h1>
+    <h3>карегория: {{category}}</h3>
+    <img ng-src="{{phone.img}}" alt="">
+    <br>
+    <input class="form-control" type="text" ng-model="phone.img" placeholder="Путь к изображению">
+    <hr>
+    <p>Название</p>
+    <input class="form-control" type="text" ng-model="phone.name"><br>
+    <p>Описание</p>
+    <textarea class="form-control" ng-model="phone.description" name="description" id="" cols="30" rows="10"></textarea><br>
+    <p>Цена</p>
+    <input class="form-control" type="text" ng-model="phone.price"><br>
+    <hr>
+    <a href="#/admin/dashboard" class="btn btn-default">Назад</a>
+    <span class="btn btn-default" ng-click="save()">Сохранить</span>
+
+    <hr>
+    <pre>{{phone|json}}</pre>
+</div>

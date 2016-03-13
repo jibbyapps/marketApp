@@ -11,6 +11,10 @@ a {
   color: #000000;
   text-decoration: none;
 }
+hr {
+  margin: 20px 0;
+  border-top: 1px solid #dedede;
+}
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#2DBE60), to(#1FAE52));
   background: -webkit-linear-gradient(top, #2DBE60, #1FAE52);
@@ -49,6 +53,9 @@ header .navigation li {
 }
 .home .thumbnail {
   text-decoration: none;
+}
+.home .thumbnail img {
+  height: 200px;
 }
 .home .category li {
   display: inline-block;
@@ -105,8 +112,11 @@ header .navigation li {
   color: forestgreen;
   font-size: 22px;
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
+}
+.details .main-img {
+  width: 250px;
 }
 .top-line {
   height: 4px;
@@ -166,8 +176,80 @@ header .navigation li {
   padding: 0 40px;
   text-align: center;
 }
-.top-line {
-  height: 4px;
-  width: 100%;
-  background: #2DBE60;
+.dashboard .thumbnail {
+  cursor: pointer;
+  text-decoration: none;
+}
+.dashboard a.glyphicon {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  font-size: 20px;
+  color: #999;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  text-decoration: none;
+  border: 1px solid #dedede;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.dashboard .add-new-category {
+  text-align: center;
+  height: 50px;
+}
+.dashboard .glyphicon-plus {
+  font-size: 22px;
+  color: #929492;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  line-height: 36px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.dashboard .glyphicon-plus:hover {
+  color: #2DBE60;
+}
+.dashboard .nameCategory {
+  position: relative;
+}
+.dashboard .nameCategory h2 {
+  float: left;
+}
+.dashboard .nameCategory .glyphicon-remove {
+  float: right;
+  cursor: pointer;
+  line-height: 63px;
+  font-size: 22px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  color: #929492;
+}
+.dashboard .nameCategory .glyphicon-remove:hover {
+  color: red;
+}
+.dashboard .add-new-phone {
+  text-align: center;
+}
+.edit .main-img {
+  width: 250px;
+}
+.addNew img {
+  max-width: 400px;
+}
+.addNew input,
+.addNew textarea {
+  width: 400px;
+}
+.addNew p {
+  color: #767676;
+}
+.addNew h1 {
+  color: #444;
+}
+.addNew h3 {
+  color: #777;
 }
